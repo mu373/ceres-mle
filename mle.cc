@@ -6,6 +6,7 @@
 #include <iomanip>
 #include <fstream>
 #include <iterator>
+#include <random>
 #include <ceres/ceres.h>
 #include <glog/logging.h>
 #include <boost/accumulators/accumulators.hpp>
@@ -89,7 +90,7 @@ int main(int argc, char** argv) {
     std::normal_distribution<> dis(0, 1);
     std::vector<double> input;
     std::cout << "Generating data..." << std::endl;
-    for (int i = 0; i < 100000; i++) {
+    for (int i = 0; i < 10000000; i++) {
         input.push_back(dis(gen));
     }
 

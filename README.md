@@ -1,6 +1,6 @@
-ceres-mle
-=========
+# ceres-mle
 
+## Overview
 A maximum likelihood estimator using Google's [ceres-solver](http://ceres-solver.org/) minimizer.
 
 Works with version `1.10.0rc1` of ceres.
@@ -12,3 +12,12 @@ This repository currently only contains a simple demo that fits a normal distrib
 
 A python script is provided that displays the data and fit.
 
+## Getting started
+```sh
+cd ../path/to/ceres-mle
+mkdir bin
+cd bin
+cmake ../
+make
+./mle
+```
